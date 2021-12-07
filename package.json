@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@material/progress-indicator": "^13.0.0"
+  }
+}
