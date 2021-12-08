@@ -10,8 +10,7 @@
 
 .box{
     width: 80vw;
-    max-height: 95vh;
-    aspect-ratio: 1/1;
+    height: 80vh;
 
     border-radius: 15px;
 
@@ -64,16 +63,16 @@
 }
 
 .hoverLight{
-    width: 200px;
+    width: 150px;
     aspect-ratio: 1/1;
 
-    position:absolute;
-    transform: translate(-50%,-50%);
+    position: absolute;
+    transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
 
-    background-color: rgba(0, 255, 0, 0.437);
-    filter: blur(60px);
+    background-color: rgba(0, 255, 0, 0.6);
+    filter: blur(70px);
 
     border-radius: 50%;
 }
