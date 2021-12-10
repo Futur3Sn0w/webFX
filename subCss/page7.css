@@ -1,0 +1,85 @@
+/* Page 7 */
+
+.page7{
+    background-color: rgb(252, 237, 234);
+}
+
+#ico-rounded-diamond{
+    animation: libRotate 12s infinite linear;
+
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    z-index: 3;
+}
+
+#ico-liquid-circle{
+    position: absolute;
+    right: 45%;
+    top: -45%;
+
+    z-index: 3;
+
+    animation: libRotate 17s infinite linear reverse;
+}
+
+#ico-liquid-square{
+    animation: libRotate 15s infinite linear;
+
+    position: absolute;
+    z-index: 1;
+    right: -40%;
+    top: -40%;
+}
+
+#ico-rounded-pill{
+    width: 610px;
+    height: 520px;
+    border-radius: 5100px;
+
+    position: absolute;
+    bottom: -20%;
+    left: -20%;
+    z-index: 1;
+
+    background-color: rgb(203, 241, 177);
+
+    animation: libRotate 10s infinite linear alternate-reverse;
+}
+
+.myText{
+    color: rgba(145, 67, 66);
+
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+
+    font-family: GSDReg;
+    font-weight: 600;
+    font-size: 100px;
+    text-align: center;
+
+    transform: translate(-50%, -50%);
+}
+
+@keyframes libRotate {
+    from{
+        transform: rotate(0) scale(.9);
+    }
+
+    to{
+        transform: rotate(360deg) scale(.9);
+    }
+}
+
+@keyframes libRotate2 {
+    from{
+        transform: rotate(0) scale(1);
+    }
+
+    to{
+        transform: rotate(360deg) scale(1);
+    }
+}

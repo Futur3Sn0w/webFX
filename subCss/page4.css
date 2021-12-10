@@ -1,0 +1,51 @@
+/* Page 4 */
+
+.page4{
+    background: linear-gradient(to bottom, #f6f7fc 0%,#d5e1e8 40%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide{
+    width: 400px;
+    height: 230px;
+    border-radius: 40px;
+    overflow: hidden;
+
+    font-family: "SF Pro Display";
+    font-size: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(#D56FFA, #852DC1);
+    color: white;
+}
+
+.slide p{
+    color: white;
+}
+
+.slide:hover .shine{
+    opacity: 1;
+}
+
+.shine{
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    filter: blur(60px);
+    opacity: 0;
+
+    transition: opacity .5s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

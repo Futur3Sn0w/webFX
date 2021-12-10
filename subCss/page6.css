@@ -1,0 +1,61 @@
+/* Page 6 */
+
+.page6{
+    background-color: var(--backColor);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 10%;
+}
+
+.exImgObj2{
+    width: 10%;
+}
+
+.loadBar{
+    width: 10%;
+    height: 4px;
+    overflow: hidden;
+
+    position: relative;
+
+    border-radius: 50px;
+    background-color: rgb(192, 192, 192);
+}
+
+.lbSwiper{
+    height: 4px;
+    width: 20px;
+
+    position: absolute;
+
+    border-radius: 50px;
+    background-color: gray;
+    animation: libSwiper 2.5s ease-in-out infinite;
+}
+
+
+@keyframes libSwiper {
+    0%{
+        left: -5%;
+        width: 5%;
+        opacity: 1;
+    }
+
+    85%{
+        left: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+
+    86%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+        left: -5%;
+        width: 5%;
+    }
+}
