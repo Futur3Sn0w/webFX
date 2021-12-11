@@ -1,0 +1,267 @@
+/* Page Navigation*/
+
+.navActivator{
+    width: 70px;
+    height: 70px;
+
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    background-color: var(--nav);
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+
+    transition: box-shadow .2s;
+}
+
+.navActivator:hover{
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.navActivator::before{
+    content: attr(data-pageNo);
+    width: 30px;
+    height: 30px;
+
+    /* transform: rotate(-45deg); */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--nav);
+    background-color: var(--navText);
+    border-radius: 50% 0;
+
+    font-family: GSTMed;
+    font-size: 23px;
+}
+
+.navDial{
+    width: 280px;
+    height: fit-content;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: var(--nav);
+    box-shadow: 0 0 0 500vh rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px 0 50px 0;
+
+    position: absolute;
+    z-index: 1000;
+    transform: scale(.7);
+
+    user-select: none;
+
+    transition: opacity .2s, transform .3s;
+
+    opacity: 0;
+}
+
+.buttonGroup{
+    width: min-content;
+    height: min-content;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+
+.navDial::after{
+    content: "×";
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: GSDMed;
+    font-size: 29px;
+
+    color: var(--navText);
+    background-color: var(--nav);
+
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: -20%;
+
+    cursor: pointer;
+}
+
+.ndTitle{
+    position: relative;
+    align-self: flex-start;
+    margin-bottom: 35px;
+    margin-left: 27px;
+
+    color: var(--navText);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.ndTitle::after{
+    content: 'Right-click a number for more info';
+    position: absolute;
+    top: 105%;
+    left: 0;
+
+    width: max-content;
+
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.pnBtn{
+    height: 70px;
+    width: 70px;
+
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.75);
+    box-shadow: 
+    0 5px 10px 0 rgba(0, 0, 0, 0.2), 
+    inset 70px 0 0 5px rgba(0, 0, 0, 0);
+
+    transition: border-radius .2s, box-shadow .2s, color .1s;
+
+    font-size: 25px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pnBtn:hover{
+    border-radius: 35%;
+    box-shadow: 
+    0 5px 10px 0 rgba(0, 0, 0, 0.2), 
+    inset 70px 0 0 5px rgba(0, 0, 0, 0.4); 
+    color: var(--navText);
+}
+
+.pnBtn::after{
+    content: attr(data-pageName);
+    box-sizing: border-box;
+
+    position: fixed;
+    left: 50%;
+    bottom: 4%;
+    transform: translateX(-50%);
+
+    width: max-content;
+    height: fit-content;
+
+    pointer-events: none;
+
+    /* opacity: 0; */
+    transition: .1s color .1s;
+
+    /* background-color: white; */
+    color: transparent;
+    border-radius: 0 0 15px 15px;
+
+    font-size: 15px;
+}
+
+.pnBtn:hover::after{
+    color: var(--navText);
+}
+
+/* Info menu */
+
+.infoMenu{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 2px;
+    
+    border-radius: 14px;
+
+    position: absolute;
+    top: 0;
+    z-index: 2000;
+
+    background-color: var(--nav);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--nav);
+
+    transform: scale(0);
+    transform-origin: top left;
+    opacity: 0;
+
+    transition: transform .2s, opacity .2s;
+}
+
+.imBar::after{
+    content: attr(data-imLabel);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    box-sizing: border-box;
+    margin-left: 7px;
+    padding-bottom: 2px;
+}
+
+.imBar{
+    width: 150px;
+    height: 40px;
+    background: white;
+
+    box-sizing: border-box;
+    padding-left: 8px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 4px;    
+}
+
+.imBar:hover{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.imBar:first-of-type{
+    border-radius: 12px 12px 4px 4px;
+}
+
+.imBar:last-of-type{
+    border-radius: 4px 4px 12px 12px;
+}
+
+.imBar i{
+    width: 16px;
+
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

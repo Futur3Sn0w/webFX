@@ -1,18 +1,19 @@
 /* Page 3 */
 
 .page3{
-    background-color: lightgray;
+    background-color: var(--pageBack);
 
     align-items: center;
     justify-content: center;
 }
 
 .box2{
-    width: 300px;
-    aspect-ratio: 1/1;
+    height: 210px;
+    aspect-ratio: 2/1;
 
     border-radius: 30px;
-    background-color: white;
+    background-color: var(--boxBack);
+    color: var(--boxText);
 
     position: relative;
 
@@ -71,4 +72,20 @@
     position: absolute;
     bottom: -30px;
     left: 0;
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --boxBack: white;
+        --boxText: black;
+        --pageBack: lightgrey;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --boxBack: black;
+        --boxText: white;
+        --pageBack: rgb(44, 44, 44);
+    }
 }

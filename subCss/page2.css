@@ -1,7 +1,7 @@
 /* Page 2 */
 
 .page2{
-    background-color: black;
+    background-color: var(--mainBack);
 }
 
 .boxGrid{
@@ -20,18 +20,18 @@
     width: auto;
     height: auto;
 
-    background-color: black;
+    background-color: var(--mainBack);
     border: 5px solid transparent;
 
     transition: border .2s;
 }
 
 .bgBox:hover{
-    border: 5px solid limegreen;
+    border: 5px solid rgb(0, 255, 0);
 }
 
 .hoverLight{
-    width: 150px;
+    width: 200px;
     aspect-ratio: 1/1;
 
     position: absolute;
@@ -39,8 +39,20 @@
     left: 50%;
     top: 50%;
 
-    background-color: rgba(0, 255, 0, 0.6);
+    background-color: rgba(0, 255, 0, 0.7);
     filter: blur(70px);
 
     border-radius: 50%;
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --mainBack: white;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --mainBack: black;
+    }
 }

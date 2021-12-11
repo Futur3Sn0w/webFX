@@ -1,7 +1,7 @@
 /* Page 4 */
 
 .page4{
-    background: linear-gradient(to bottom, #f6f7fc 0%,#d5e1e8 40%);
+    background: var(--bgGrad);
     
     display: flex;
     align-items: center;
@@ -48,4 +48,16 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --bgGrad: linear-gradient(to bottom, #f6f7fc 0%,#d5e1e8 40%);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --bgGrad: linear-gradient(to bottom, hsl(230, 50%, 2%) 0%,hsl(202, 29%, 13%) 40%);
+    }
 }

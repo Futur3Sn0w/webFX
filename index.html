@@ -5,20 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webFX</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="globals.css">
+    <script src="https://kit.fontawesome.com/a1fc6f0f3a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="infoMenu" id="infoMenu">
+        <div class="imBar darkSupport" id="darkSupport" data-imLabel="Dark Mode">
+            <i class="fas fa-adjust"></i>
+        </div>
+        <div class="imBar mobileSupport" id="mobileSupport" data-imLabel="Mobile support">
+            <i class="fas fa-mobile"></i>
+        </div>
+        <div class="imBar responsive" id="responsive" data-imLabel="Responsive">
+            <i class="fas fa-expand-arrows-alt"></i>
+        </div>
+        <div class="imBar interactive" id="interactive" data-imLabel="Interactive">
+            <i class="fas fa-sliders-h"></i>
+        </div>
+    </div>
+
     <div class="navActivator" id="navActivator" data-pageNo="1"></div>
 
     <div class="navDial" id="navDial">
-        <div class="pnBtn pnbtn1" style="background-color: #d2bedb;" id="pageBtn1" data-pageName="Neomorphism">1</div>
-        <div class="pnBtn pnbtn2" style="background-color: #b6d8ee;" id="pageBtn2" data-pageName="Fluent Design: 'Hover Focus'">2</div>
-        <div class="pnBtn pnbtn3" style="background-color: #f3b5b0;" id="pageBtn3" data-pageName="Lightbox w/ banner">3</div>
-        <div class="pnBtn pnbtn4" style="background-color: #fadfac;" id="pageBtn4" data-pageName="tvOS hover light">4</div>
-        <div class="pnBtn pnbtn5" style="background-color: #fec6b8;" id="pageBtn5" data-pageName="Apple Music window card">5</div>
-        <div class="pnBtn pnbtn6" style="background-color: #b3cdc3;" id="pageBtn6" data-pageName="Pixel Boot Screen (Emulated)">6</div>
-        <div class="pnBtn pnbtn7" style="background-color: #e8f79f;" id="pageBtn7" data-pageName="More Material You Things">7</div>
+        <div class="ndTitle">Page Dial</div>
+        <div class="buttonGroup">
+            <div class="pnBtn pnbtn1" style="background-color: #d2bedb;" id="pageBtn1" data-pageName="Neomorphism">1</div>
+            <div class="pnBtn pnbtn2" style="background-color: #b6d8ee;" id="pageBtn2" data-pageName="Fluent Design: 'Hover Focus'">2</div>
+            <div class="pnBtn pnbtn3" style="background-color: #f3b5b0;" id="pageBtn3" data-pageName="Lightbox w/ banner">3</div>
+            <div class="pnBtn pnbtn4" style="background-color: #fadfac;" id="pageBtn4" data-pageName="tvOS hover light">4</div>
+            <div class="pnBtn pnbtn5" style="background-color: #fec6b8;" id="pageBtn5" data-pageName="Apple Music window card">5</div>
+            <div class="pnBtn pnbtn6" style="background-color: #b3cdc3;" id="pageBtn6" data-pageName="Pixel Boot Screen (Emulated)">6</div>
+            <div class="pnBtn pnbtn7" style="background-color: #e8f79f;" id="pageBtn7" data-pageName="More Material You Things">7</div>
+        </div>
     </div>
 
     <embed class="page1i" src="subpages/page1.html" frameborder="0" id="iViewport"></embed>
