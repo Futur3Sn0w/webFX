@@ -1,3 +1,7 @@
+html{
+    background-color: black;
+}
+
 body{
     margin: 0;
 
@@ -9,25 +13,37 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* background-color: black; */
 }
 
 .page1i{
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 48px);
 
     position: absolute;
     left: 0;
     top: 0;
 
     z-index: 888;
+
+    border-radius: 0 0 20px 20px;
 }
 
 /* Global Variables */
 
 :root{
-    --green: #9bce6c;
-    --yellow: #ebd871;
+    --green: #8fc55b;
+    --yellow: #eed95f;
     --red: #d88585;
+
+    --my1: rgba(239, 157, 247, 0.3);
+    --my2: rgba(116, 107, 238, 0.3);
+    --my3: rgba(243, 180, 176, 0.3);
+    --my4: rgba(250, 223, 172, 0.3);
+    --my5: rgba(254, 198, 184, 0.3);
+    --my6: rgba(179, 205, 195, 0.3);
+    --my7: rgba(232, 247, 159, 0.3);
 
     --gradGreen: linear-gradient(-90deg, var(--green) 30%, transparent);
     --gradYellow: linear-gradient(-90deg, var(--yellow) 30%, transparent);
