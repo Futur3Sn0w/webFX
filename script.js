@@ -29,6 +29,8 @@ window.onload = function () {
     mobileSupport.style.backgroundColor = "var(--green)";
     responsive.style.backgroundColor = "var(--green)";
     interactive.style.backgroundColor = "var(--red)";
+
+    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my1');
 }
 
 button1.onclick = function() {
