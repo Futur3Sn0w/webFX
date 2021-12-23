@@ -1,0 +1,80 @@
+:root{
+    --backImg1: url(../imgs/1red.jpg);
+    --backImg2: url(../imgs/2orange.jpeg);
+    --backImg3: url(../imgs/3yellow.jpeg);
+    --backImg4: url(../imgs/4green.jpeg);
+    --backImg5: url(../imgs/5blue.jpeg);
+    --backImg6: url(../imgs/6purple.jpeg);
+}
+
+.page9{
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backdrop{
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    z-index: 0;
+    background-image: var(--backImg1);
+
+    filter: blur(200px);
+    transform: scale(1.5);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.prevBox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+
+    position: relative;
+    z-index: 1;
+
+    gap: 1.5em;
+
+    height: fit-content;
+}
+
+.demoImg{
+    width: 16em;
+    aspect-ratio: 1/1.5;
+
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    transition: transform .2s;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.demoImg:hover{
+    transform: scale(1.05);
+}
+
+.selectedInd{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    color: rgb(52, 192, 52);
+    font-size: 5em;
+}

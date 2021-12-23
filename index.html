@@ -15,6 +15,7 @@
         <div class="buttonGroup">
             <div class="pnBtn pnbtn1" style="background-color: #d2bedb;" id="pageBtn1" data-pageName="Neomorphism">
                 <i class="fas fa-box"></i>
+                <div class="pnIndic" id="pni1"></div>
             </div>
             <div class="pnBtn pnbtn2" style="background-color: #b6d8ee;" id="pageBtn2" data-pageName="Fluent Design: 'Hover Focus'">
                 <i class="fas fa-grip-horizontal"></i>
@@ -22,7 +23,7 @@
             <div class="pnBtn pnbtn3" style="background-color: #f3b5b0;" id="pageBtn3" data-pageName="Lightbox w/ banner">
                 <i class="fas fa-bookmark"></i>
             </div>
-            <div class="pnBtn pnbtn4" style="background-color: #fadfac;" id="pageBtn4" data-pageName="tvOS hover light">
+            <div class="pnBtn pnbtn4" style="background-color: #fadfac; display: none;" id="pageBtn4" data-pageName="tvOS hover light">
                 <i class="fas fa-lightbulb"></i>
             </div>
             <div class="pnBtn pnbtn5" style="background-color: #fec6b8;" id="pageBtn5" data-pageName="Apple Music window card">
@@ -34,6 +35,13 @@
             <div class="pnBtn pnbtn7" style="background-color: #e8f79f;" id="pageBtn7" data-pageName="More Material You Things">
                 <i class="fab fa-android"></i>
             </div>
+            <!-- <div class="pnSep"></div> -->
+            <div class="pnBtn pnbtn8" style="background-color: #fadfac; display: none;" id="pageBtn8" data-pageName="Play on Logos (Disabled)">
+                <i class="fas fa-play"></i>
+            </div>
+            <div class="pnBtn pnbtn9" style="background-color: #f3b5b0;" id="pageBtn9" data-pageName="BlurFX">
+                <i class="fas fa-brush"></i>
+            </div>
         </div>
         <div class="statusCenterBtn" id="scBtn">Neomorphism</div>
     </div>
@@ -41,6 +49,9 @@
     <div class="statusCenter" id="statusCenter">
         <div class="scTop">
             <div class="sctTitle" id="sctTitle">Neomorphism</div>
+            <div class="sctInfoBtn">
+                <i class="fas fa-info-circle"></i>
+            </div>
         </div>
         <div class="scTile darkSupport" id="darkSupport" data-imLabel="Dark Mode">
             <i class="fas fa-adjust"></i>
@@ -56,6 +67,8 @@
         </div>
     </div>
 
+    <div class="mpiPopup"></div>
+
     <div class="scBackplane" id="scBackplane"></div>
 
     <embed class="page1i" src="subpages/page1.html" frameborder="0" id="iViewport"></embed>
@@ -67,14 +80,16 @@
         var statHider = document.getElementById('scBackplane');
 
         scBtn.onclick = function () {
-            statCenter.style.display = "grid";
+            statCenter.style.right = "5px";
+            statCenter.style.opacity = "1";
             statHider.style.display = "block";
 
             scBtn.style.backgroundColor = "rgba(255, 255, 255, .2)"
         }
 
         statHider.onclick = function () {
-            statCenter.style.display = "none";
+            statCenter.style.right = "-295px";
+            statCenter.style.opacity = "0";
             statHider.style.display = "none";
 
             scBtn.style.backgroundColor = "rgba(255, 255, 255, .1)"

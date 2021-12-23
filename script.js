@@ -9,6 +9,10 @@ let button4 = document.getElementById('pageBtn4');
 let button5 = document.getElementById('pageBtn5');
 let button6 = document.getElementById('pageBtn6');
 let button7 = document.getElementById('pageBtn7');
+let button8 = document.getElementById('pageBtn8');
+let button9 = document.getElementById('pageBtn9');
+
+let indic1 = document.getElementById('pni1');
 
 let button = document.querySelector('.pnBtn');
 
@@ -36,6 +40,8 @@ window.onload = function () {
 button1.onclick = function() {
     vwprt.src = "subpages/page1.html";
 
+    button1.appendChild(indic1);
+
     scBtn.innerHTML = button1.getAttribute('data-pageName');
     sctTitle.innerHTML = button1.getAttribute('data-pageName');
 
@@ -49,6 +55,8 @@ button1.onclick = function() {
 
 button2.onclick = function() {
     vwprt.src = "subpages/page2.html";
+
+    button2.appendChild(indic1);
 
     scBtn.innerHTML = button2.getAttribute('data-pageName');
     sctTitle.innerHTML = button2.getAttribute('data-pageName');
@@ -64,6 +72,8 @@ button2.onclick = function() {
 button3.onclick = function() {
     vwprt.src = "subpages/page3.html";
 
+    button3.appendChild(indic1);
+
     scBtn.innerHTML = button3.getAttribute('data-pageName');
     sctTitle.innerHTML = button3.getAttribute('data-pageName');
 
@@ -77,6 +87,8 @@ button3.onclick = function() {
 
 button4.onclick = function() {
     vwprt.src = "subpages/page4.html";
+
+    button4.appendChild(indic1);
 
     scBtn.innerHTML = button4.getAttribute('data-pageName');
     sctTitle.innerHTML = button4.getAttribute('data-pageName');
@@ -92,6 +104,8 @@ button4.onclick = function() {
 button5.onclick = function() {
     vwprt.src = "subpages/page5.html";
 
+    button5.appendChild(indic1);
+
     scBtn.innerHTML = button5.getAttribute('data-pageName');
     sctTitle.innerHTML = button5.getAttribute('data-pageName');
 
@@ -105,6 +119,8 @@ button5.onclick = function() {
 
 button6.onclick = function() {
     vwprt.src = "subpages/page6.html";
+
+    button6.appendChild(indic1);
 
     scBtn.innerHTML = button6.getAttribute('data-pageName');
     sctTitle.innerHTML = button6.getAttribute('data-pageName');
@@ -120,6 +136,8 @@ button6.onclick = function() {
 button7.onclick = function() {
     vwprt.src = "subpages/page7.html";
 
+    button7.appendChild(indic1);
+
     scBtn.innerHTML = button7.getAttribute('data-pageName');
     sctTitle.innerHTML = button7.getAttribute('data-pageName');
 
@@ -129,4 +147,36 @@ button7.onclick = function() {
     mobileSupport.style.backgroundColor = "var(--green)";
     responsive.style.backgroundColor = "var(--green)";
     interactive.style.backgroundColor = "var(--red)";
+}
+
+button8.onclick = function() {
+    vwprt.src = "subpages/page8.html";
+
+    button8.appendChild(indic1);
+
+    scBtn.innerHTML = button8.getAttribute('data-pageName');
+    sctTitle.innerHTML = button8.getAttribute('data-pageName');
+
+    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my7');
+
+    darkSupport.style.backgroundColor = "var(--green)";
+    mobileSupport.style.backgroundColor = "var(--green)";
+    responsive.style.backgroundColor = "var(--green)";
+    interactive.style.backgroundColor = "var(--green)";
+}
+
+button9.onclick = function() {
+    vwprt.src = "subpages/page9.html";
+
+    button9.appendChild(indic1);
+
+    scBtn.innerHTML = button9.getAttribute('data-pageName');
+    sctTitle.innerHTML = button9.getAttribute('data-pageName');
+
+    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my3');
+
+    darkSupport.style.backgroundColor = "var(--red)";
+    mobileSupport.style.backgroundColor = "var(--yellow)";
+    responsive.style.backgroundColor = "var(--red)";
+    interactive.style.backgroundColor = "var(--green)";
 }

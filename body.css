@@ -123,6 +123,14 @@
     transform: scale(1);
 }
 
+.pnSep{
+    width: 2px;
+    height: 25px;
+
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
 .pnIndic{
     width: 13px;
     height: 4px;
@@ -173,30 +181,34 @@
 }
 
 .statusCenter{
-    width: fit-content;
+    width: 300px;
     height: fit-content;
     overflow: hidden;
 
-    padding: 40px 10px 10px 10px;
+    padding: 45px 10px 10px 10px;
 
     background-color: rgb(20, 20, 20);
-    border-radius: 15px 15px 0 0;
+    border-radius: 18px;
 
-    display: none;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    place-content: center;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 7px;
+
+    transition: right .2s, opacity .2s;
 
     position: absolute;
     z-index: 3000;
-    bottom: 48px;
-    right: 0;
+    bottom: 53px;
+    right: -295px;
 }
 
 .scTile{
+    width: 47%;
     height: 40px;
-    aspect-ratio: 3.3/1;
 
     box-sizing: border-box;
     padding-left: 10px;
@@ -228,19 +240,92 @@
     box-sizing: border-box;
 
     padding-top: 3px;
-    padding-left: 10px;
+    padding-left: 12px;
+    margin-bottom: 52px;
 
     display: flex;
     align-items: center;
 
+    background: linear-gradient(90deg, transparent, rgb(66, 66, 66));
+
+    transition: background .1s;
+
+    border-radius: 500px;
     color: white;
     /* background-color: rgba(255, 255, 255, 0.096); */
 
     position: absolute;
+    top: 0;
+}
+
+.scTop:hover .sctInfoBtn{
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .sctTitle{
-    font-size: 11px;
+    font-size: 12px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
+}
+
+.sctInfoBtn{
+    width: 45px;
+    height: 35px;
+
+    margin-top: -3px;
+    margin-left: auto;
+
+    border-radius: 500px;
+    color: white;
+
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 730px) {
+    .buttonGroup {
+      margin-right: auto;
+      margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .navDial {
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: fit-content;
+
+      gap: 10px;
+
+      padding-bottom: 5px;
+    }
+    
+    .buttonGroup{
+        width: 100%;
+    }
+
+    .statusCenterBtn{
+        position: relative;
+    }
+
+    #iViewport{
+        height: calc(100vh - 93px);
+    }
+
+    .statusCenter{
+        box-sizing: border-box;
+        width: 100vw;
+        bottom: 93px;
+        margin: 0;
+
+        border-radius: 0 0 18px 18px;
+        transform: translateX(5px)
+    }
+
+    .scTop{
+        border-radius: 0;
+    }
 }

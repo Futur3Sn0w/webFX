@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../subCss/page9.css">
+    <link rel="stylesheet" href="../globals.css">
+    <script src="https://kit.fontawesome.com/a1fc6f0f3a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page page9" id="page9">
+        <div class="backdrop" id="backdrop"></div>
+        <div class="prevBox">
+            <div id="di1" class="demoImg di1" style="background-image: url(../imgs/1red.jpg);">
+            <div id="selected" class="selectedInd">
+                <i class="fas fa-check"></i>
+            </div>
+            </div>
+            <div id="di2" class="demoImg di2" style="background-image: url(../imgs/2orange.jpeg);"></div>
+            <div id="di3" class="demoImg di3" style="background-image: url(../imgs/3yellow.jpeg);"></div>
+            <div id="di4" class="demoImg di4" style="background-image: url(../imgs/4green.jpeg);"></div>
+            <div id="di5" class="demoImg di5" style="background-image: url(../imgs/5blue.jpeg);"></div>
+            <div id="di6" class="demoImg di6" style="background-image: url(../imgs/6purple.jpeg);"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('di1').onclick = function () {
+            document.getElementById('backdrop').style.backgroundImage = "var(--backImg1)";
+            document.getElementById('di1').appendChild(document.getElementById('selected'));
+        }
+
+        document.getElementById('di2').onclick = function () {
+            document.getElementById('backdrop').style.backgroundImage = "var(--backImg2)";
+            document.getElementById('di2').appendChild(document.getElementById('selected'));
+        }
+
+        document.getElementById('di3').onclick = function () {
+            document.getElementById('backdrop').style.backgroundImage = "var(--backImg3)";
+            document.getElementById('di3').appendChild(document.getElementById('selected'));
+        }
+
+        document.getElementById('di4').onclick = function () {
+            document.getElementById('backdrop').style.backgroundImage = "var(--backImg4)";
+            document.getElementById('di4').appendChild(document.getElementById('selected'));
+        }
+
+        document.getElementById('di5').onclick = function () {
+            document.getElementById('backdrop').style.backgroundImage = "var(--backImg5)";
+            document.getElementById('di5').appendChild(document.getElementById('selected'));
+        }
+
+        document.getElementById('di6').onclick = function () {
+            document.getElementById('backdrop').style.backgroundImage = "var(--backImg6)";
+            document.getElementById('di6').appendChild(document.getElementById('selected'));
+        }
+    </script>
+</body>
+</html>

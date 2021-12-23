@@ -44,6 +44,7 @@ body{
     --my5: rgba(254, 198, 184, 0.3);
     --my6: rgba(179, 205, 195, 0.3);
     --my7: rgba(232, 247, 159, 0.3);
+    --my8: rgba(250, 223, 172, 0.3);
 
     --gradGreen: linear-gradient(-90deg, var(--green) 30%, transparent);
     --gradYellow: linear-gradient(-90deg, var(--yellow) 30%, transparent);

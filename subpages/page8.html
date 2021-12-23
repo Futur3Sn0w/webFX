@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../subCss/page8.css">
+    <link rel="stylesheet" href="../globals.css">
+    <script src="https://kit.fontawesome.com/a1fc6f0f3a.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+<body>
+    <div class="page page8" id="page8">
+       <div class="playLogo">
+       <span class="iconify icMain" id="icMain" data-icon="ic:round-videogame-asset"></span>
+       <i class="fas fa-play"></i>
+       Google Play
+       </div>
+       <div class="pickAnIcon">
+           <div class="paiBtn paib1" id="iconBtn1">
+               <span class="iconify" data-icon="ic:round-android"></span>
+           </div>
+           <div class="paiBtn paib2" id="iconBtn2">
+               <span class="iconify" data-icon="ic:round-smartphone"></span>
+           </div>
+           <div class="paiBtn paib3" id="iconBtn3">
+               <span class="iconify" data-icon="ic:round-laptop-chromebook"></span>
+           </div>
+           <div class="paiBtn paib4" id="iconBtn4">
+               <span class="iconify" data-icon="ic:round-music-note"></span>
+           </div>
+           <div class="paiBtn paib5" id="iconBtn5">
+               <span class="iconify" data-icon="ic:round-videogame-asset"></span>
+           </div>
+       </div>
+    </div>
+
+    <script>
+     let icnBtn1 = document.getElementById('iconBtn1');
+     let icnBtn2 = document.getElementById('iconBtn2');
+     let icnBtn3 = document.getElementById('iconBtn3');
+     let icnBtn4 = document.getElementById('iconBtn4');
+     let icnBtn5 = document.getElementById('iconBtn5');
+
+     var icMain = document.getElementById('icMain');
+
+     icnBtn1.onclick = function () {
+          document.getElementById('icMain').setAttribute("data-icon", "ic:round-android");
+     }
+
+     icnBtn2.onclick = function () {
+          document.getElementById('icMain').setAttribute("data-icon", "ic:round-smartphone");
+     }
+
+     icnBtn3.onclick = function () {
+          document.getElementById('icMain').setAttribute("data-icon", "ic:round-laptop-chromebook");
+     }
+
+     icnBtn4.onclick = function () {
+          document.getElementById('icMain').setAttribute("data-icon", "ic:round-music-note");
+     }
+
+     icnBtn5.onclick = function () {
+          document.getElementById('icMain').setAttribute("data-icon", "ic:round-videogame-asset");
+     }
+    </script>
+</body>
+</html>
