@@ -1,0 +1,61 @@
+.page10{
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBox{
+    width: 50%;
+    max-width: 400px;
+    height: 400px;
+
+    position: relative;
+    z-index: -0;
+
+    box-sizing: border-box;
+    padding: 0 20px;
+
+    overflow: scroll;
+
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.103); */
+
+    font-size: 20px;
+    font-family: var(--fontFace);
+}
+
+.textBox::-webkit-scrollbar{
+    display: none !important;
+}
+
+.gradi{
+    position: sticky;
+    top: 0;
+    /* z-index: -1.5; */
+
+    width: 100%;
+    height: 150px;
+
+    background: linear-gradient(black 20%, transparent);
+}
+
+.gradi2{
+    position: sticky;
+    bottom: -1px;
+    /* z-index: -1.5; */
+
+    width: 100%;
+    height: 150px;
+
+    background: linear-gradient(transparent 20%, black);
+}
+
+.hint{
+    position: absolute;
+    bottom: 1%;
+
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.226);
+}
