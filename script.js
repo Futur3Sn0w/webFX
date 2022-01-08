@@ -40,15 +40,19 @@ window.onload = function () {
     document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my1');
 }
 
+function globalBtn(obj) {
+    obj.appendChild(indic1);
+    scBtn.innerHTML = obj.getAttribute('data-pageName');
+    sctTitle.innerHTML = obj.getAttribute('data-pageName');
+
+    vwprt.src = "subpages/" + obj.getAttribute("data-pageSrcName") + ".html";
+    document.body.style.backgroundColor = obj.style.backgroundColor;
+
+    document.title = "webFX | " + obj.getAttribute('data-pageName');
+}
+
 button1.onclick = function() {
-    vwprt.src = "subpages/page1.html";
-
-    button1.appendChild(indic1);
-
-    scBtn.innerHTML = button1.getAttribute('data-pageName');
-    sctTitle.innerHTML = button1.getAttribute('data-pageName');
-
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my1');
+    globalBtn(this);
 
     darkSupport.style.backgroundColor = "var(--green)";
     mobileSupport.style.backgroundColor = "var(--green)";
@@ -59,14 +63,7 @@ button1.onclick = function() {
 }
 
 button2.onclick = function() {
-    vwprt.src = "subpages/page2.html";
-
-    button2.appendChild(indic1);
-
-    scBtn.innerHTML = button2.getAttribute('data-pageName');
-    sctTitle.innerHTML = button2.getAttribute('data-pageName');
-
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my2');
+    globalBtn(this);
 
     darkSupport.style.backgroundColor = "var(--green)";
     mobileSupport.style.backgroundColor = "var(--yellow)";
@@ -77,14 +74,7 @@ button2.onclick = function() {
 }
 
 button3.onclick = function() {
-    vwprt.src = "subpages/page3.html";
-
-    button3.appendChild(indic1);
-
-    scBtn.innerHTML = button3.getAttribute('data-pageName');
-    sctTitle.innerHTML = button3.getAttribute('data-pageName');
-
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my3');
+    globalBtn(this);
 
     darkSupport.style.backgroundColor = "var(--green)";
     mobileSupport.style.backgroundColor = "var(--yellow)";
@@ -95,12 +85,7 @@ button3.onclick = function() {
 }
 
 button4.onclick = function() {
-    vwprt.src = "subpages/page4.html";
-
-    button4.appendChild(indic1);
-
-    scBtn.innerHTML = button4.getAttribute('data-pageName');
-    sctTitle.innerHTML = button4.getAttribute('data-pageName');
+    globalBtn(this);
 
     document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my4');
 
@@ -113,14 +98,7 @@ button4.onclick = function() {
 }
 
 button5.onclick = function() {
-    vwprt.src = "subpages/page5.html";
-
-    button5.appendChild(indic1);
-
-    scBtn.innerHTML = button5.getAttribute('data-pageName');
-    sctTitle.innerHTML = button5.getAttribute('data-pageName');
-
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my5');
+    globalBtn(this);
 
     darkSupport.style.backgroundColor = "var(--yellow)";
     mobileSupport.style.backgroundColor = "var(--green)";
@@ -131,14 +109,7 @@ button5.onclick = function() {
 }
 
 button6.onclick = function() {
-    vwprt.src = "subpages/page6.html";
-
-    button6.appendChild(indic1);
-
-    scBtn.innerHTML = button6.getAttribute('data-pageName');
-    sctTitle.innerHTML = button6.getAttribute('data-pageName');
-
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my6');
+    globalBtn(this);
 
     darkSupport.style.backgroundColor = "var(--green)";
     mobileSupport.style.backgroundColor = "var(--green)";
@@ -149,14 +120,7 @@ button6.onclick = function() {
 }
 
 button7.onclick = function() {
-    vwprt.src = "subpages/page7.html";
-
-    button7.appendChild(indic1);
-
-    scBtn.innerHTML = button7.getAttribute('data-pageName');
-    sctTitle.innerHTML = button7.getAttribute('data-pageName');
-
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my7');
+    globalBtn(this);
 
     darkSupport.style.backgroundColor = "var(--green)";
     mobileSupport.style.backgroundColor = "var(--green)";
@@ -167,14 +131,7 @@ button7.onclick = function() {
 }
 
 button8.onclick = function() {
-    vwprt.src = "subpages/page8.html";
-
-    button8.appendChild(indic1);
-
-    scBtn.innerHTML = button8.getAttribute('data-pageName');
-    sctTitle.innerHTML = button8.getAttribute('data-pageName');
-
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my7');
+    globalBtn(this);
 
     darkSupport.style.backgroundColor = "var(--green)";
     mobileSupport.style.backgroundColor = "var(--green)";
@@ -185,14 +142,7 @@ button8.onclick = function() {
 }
 
 button9.onclick = function() {
-    vwprt.src = "subpages/page9.html";
-
-    button9.appendChild(indic1);
-
-    scBtn.innerHTML = button9.getAttribute('data-pageName');
-    sctTitle.innerHTML = button9.getAttribute('data-pageName');
-
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my3');
+    globalBtn(this);
 
     darkSupport.style.backgroundColor = "var(--red)";
     mobileSupport.style.backgroundColor = "var(--yellow)";
@@ -203,14 +153,7 @@ button9.onclick = function() {
 }
 
 button10.onclick = function() {
-    vwprt.src = "subpages/page10.html";
-
-    button10.appendChild(indic1);
-
-    scBtn.innerHTML = button10.getAttribute('data-pageName');
-    sctTitle.innerHTML = button10.getAttribute('data-pageName');
-
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my6');
+    globalBtn(this);
 
     darkSupport.style.backgroundColor = "var(--red)";
     mobileSupport.style.backgroundColor = "var(--yellow)";
@@ -221,14 +164,7 @@ button10.onclick = function() {
 }
 
 button11.onclick = function() {
-    vwprt.src = "subpages/page11.html";
-
-    button11.appendChild(indic1);
-
-    scBtn.innerHTML = button11.getAttribute('data-pageName');
-    sctTitle.innerHTML = button11.getAttribute('data-pageName');
-
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my5');
+    globalBtn(this);
 
     darkSupport.style.backgroundColor = "var(--yellow)";
     mobileSupport.style.backgroundColor = "var(--red)";

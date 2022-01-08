@@ -4,57 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webFX</title>
+    <title>webFX | No-morphism</title>
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="globals.css">
     <script src="https://kit.fontawesome.com/a1fc6f0f3a.js" crossorigin="anonymous"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#8934c8">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="WebFX">
+    <meta name="application-name" content="WebFX">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
+    <style>
+    body::after{
+        content: "";
+        width: 100vw;
+        height: 100vh;
+
+        position: absolute;
+
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+    </style>
+
     <div class="navDial" id="navDial">
         <div class="buttonGroup">
-            <div class="pnBtn pnbtn1" style="background-color: #d2bedb;" id="pageBtn1" data-pageName="Neomorphism">
+            <div 
+            class="pnBtn pnbtn1" 
+            id="pageBtn1" 
+            style="background-color: #d2bedb;" 
+            data-pageSrcName="page1" 
+            data-pageName="No-morphism">
+
                 <i class="fas fa-box"></i>
                 <div class="pnIndic" id="pni1"></div>
+
             </div>
-            <div class="pnBtn pnbtn2" style="background-color: #b6d8ee;" id="pageBtn2" data-pageName="Fluent Design: 'Hover Focus'">
+
+            <div 
+            class="pnBtn pnbtn2" 
+            id="pageBtn2" 
+            style="background-color: #b6d8ee;" 
+            data-pageSrcName="page2" 
+            data-pageName="Fluent Design: 'Hover Focus'">
+
                 <i class="fas fa-grip-horizontal"></i>
+
             </div>
-            <div class="pnBtn pnbtn3" style="background-color: #f3b5b0;" id="pageBtn3" data-pageName="Lightbox w/ banner">
+
+            <div 
+            class="pnBtn pnbtn3" 
+            id="pageBtn3" 
+            style="background-color: #f3b5b0;" 
+            data-pageSrcName="page3" 
+            data-pageName="Lightbox w/ banner">
+                
                 <i class="fas fa-bookmark"></i>
+
             </div>
-            <div class="pnBtn pnbtn4" style="background-color: #fadfac; display: none;" id="pageBtn4" data-pageName="tvOS hover light">
+
+            <div 
+            class="pnBtn pnbtn4" 
+            id="pageBtn4" 
+            style="background-color: #fadfac; display: none;" 
+            data-pageSrcName="page4" 
+            data-pageName="tvOS hover light">
+                
                 <i class="fas fa-lightbulb"></i>
+
             </div>
-            <div class="pnBtn pnbtn5" style="background-color: #fec6b8;" id="pageBtn5" data-pageName="Apple Music window card">
+
+            <div 
+            class="pnBtn pnbtn5" 
+            id="pageBtn5" 
+            style="background-color: #fec6b8;" 
+            data-pageSrcName="page5" 
+            data-pageName="Apple Music window card">
+                
                 <i class="fas fa-music"></i>
+
             </div>
-            <div class="pnBtn pnbtn6" style="background-color: #b3cdc3;" id="pageBtn6" data-pageName="Pixel Boot Screen (Emulated)">
+
+            <div 
+            class="pnBtn pnbtn6" 
+            id="pageBtn6" 
+            style="background-color: #b3cdc3;" 
+            data-pageSrcName="page6" 
+            data-pageName="Pixel Boot Screen (Emulated)">
+                
                 <i class="fab fa-google"></i>
+
             </div>
-            <div class="pnBtn pnbtn7" style="background-color: #e8f79f;" id="pageBtn7" data-pageName="More Material You Things">
+
+            <div 
+            class="pnBtn pnbtn7" 
+            id="pageBtn7" 
+            style="background-color: #e8f79f;" 
+            data-pageSrcName="page7" 
+            data-pageName="More Material You Things">
+                
                 <i class="fab fa-android"></i>
+
             </div>
-            <!-- <div class="pnSep"></div> -->
-            <div class="pnBtn pnbtn8" style="background-color: #fadfac; display: none;" id="pageBtn8" data-pageName="Play on Logos (Disabled)">
+
+            <div 
+            class="pnBtn pnbtn8" 
+            id="pageBtn8" 
+            style="background-color: #fadfac; display: none;" 
+            data-pageSrcName="page8" 
+            data-pageName="Play on Logos (Disabled)">
+                
                 <i class="fas fa-play"></i>
+
             </div>
-            <div class="pnBtn pnbtn9" style="background-color: #f3b5b0;" id="pageBtn9" data-pageName="BlurFX">
+
+            <div 
+            class="pnBtn pnbtn9" 
+            id="pageBtn9" 
+            style="background-color: #f3b5b0;" 
+            data-pageSrcName="page9" 
+            data-pageName="BlurFX">
+                
                 <i class="fas fa-brush"></i>
+
             </div>
-            <div class="pnBtn pnbtn10" style="background-color: #b3cdc3;" id="pageBtn10" data-pageName="TeleText">
+
+            <div 
+            class="pnBtn pnbtn10" 
+            id="pageBtn10" 
+            style="background-color: #b3cdc3;" 
+            data-pageSrcName="page10" 
+            data-pageName="TeleText">
+                
                 <i class="fas fa-mouse"></i>
+
             </div>
-            <div class="pnBtn pnbtn11" style="background-color: #fec6b8;" id="pageBtn11" data-pageName="In&Out">
+
+            <div 
+            class="pnBtn pnbtn11" 
+            id="pageBtn11" 
+            style="background-color: #fec6b8;" 
+            data-pageSrcName="page11" 
+            data-pageName="In&Out">
+                
                 <i class="fas fa-pallet"></i>
+
             </div>
         </div>
-        <div class="statusCenterBtn" id="scBtn">Neomorphism</div>
+        <div class="statusCenterBtn" id="scBtn">No-morphism</div>
     </div>
 
     <div class="statusCenter" id="statusCenter">
         <div class="scTop">
-            <div class="sctTitle" id="sctTitle">Neomorphism</div>
+            <div class="sctTitle" id="sctTitle">No-morphism</div>
             <div class="sctInfoBtn">
                 <i class="fas fa-info-circle"></i>
             </div>
