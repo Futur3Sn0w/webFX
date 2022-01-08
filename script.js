@@ -12,6 +12,7 @@ let button7 = document.getElementById('pageBtn7');
 let button8 = document.getElementById('pageBtn8');
 let button9 = document.getElementById('pageBtn9');
 let button10 = document.getElementById('pageBtn10');
+let button11 = document.getElementById('pageBtn11');
 
 let indic1 = document.getElementById('pni1');
 
@@ -217,4 +218,22 @@ button10.onclick = function() {
     interactive.style.backgroundColor = "var(--green)";
 
     scBlur.classList.add('visible');
+}
+
+button11.onclick = function() {
+    vwprt.src = "subpages/page11.html";
+
+    button11.appendChild(indic1);
+
+    scBtn.innerHTML = button11.getAttribute('data-pageName');
+    sctTitle.innerHTML = button11.getAttribute('data-pageName');
+
+    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my5');
+
+    darkSupport.style.backgroundColor = "var(--yellow)";
+    mobileSupport.style.backgroundColor = "var(--red)";
+    responsive.style.backgroundColor = "var(--green)";
+    interactive.style.backgroundColor = "var(--green)";
+
+    scBlur.classList.remove('visible');
 }

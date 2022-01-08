@@ -1,0 +1,142 @@
+.page11{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+
+    background-color: white;
+    background-image: url("https://blogs.windows.com/wp-content/uploads/prod/sites/2/2021/10/Windows-11-Bloom-Screensaver-Dark-scaled.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box{
+    width: fit-content;
+    height: fit-content;
+
+    position: relative;
+    z-index: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--fontFace);
+    font-weight: bolder;
+    font-size: 40px;
+    color: black;
+}
+
+.box:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.box::before{
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    padding: 5px 10px;
+    z-index: -1;
+
+    background-color: orange;
+
+    transform: scaleX(.00001);
+    transform-origin: right;
+    transition: transform .2s;
+}
+
+.box::after{
+    content: "";
+
+    width: 100vw;
+    height: 100px;
+
+    position: absolute;
+    z-index: -2;
+
+    pointer-events: none;
+
+    background-color: white;
+}
+
+.fakeTaskbar{
+    width: 100vw;
+    height: 55px;
+
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+}
+
+.box2{
+    height: 90%;
+    aspect-ratio: 1/1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    position: relative;
+
+    font-size: 23px;
+
+    color: white;
+}
+
+.box2::before{
+    content: "";
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    transform: scale(1.1);
+    opacity: 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-top-color: rgba(255, 255, 255, 0.1);
+
+    position: absolute;
+    z-index: -1;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+
+    animation: boxLeave .15s forwards;
+}
+
+.box2:hover::before{
+    animation: boxHov .15s forwards;
+}
+
+@keyframes boxHov {
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes boxLeave {
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(.9);
+        opacity: 0;
+    }
+}
