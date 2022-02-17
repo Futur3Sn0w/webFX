@@ -37,7 +37,7 @@ window.onload = function () {
     responsive.style.backgroundColor = "var(--green)";
     interactive.style.backgroundColor = "var(--red)";
 
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my1');
+    document.body.style.backgroundColor = button1.style.backgroundColor;
 }
 
 function globalBtn(obj) {
@@ -49,7 +49,23 @@ function globalBtn(obj) {
     document.body.style.backgroundColor = obj.style.backgroundColor;
 
     document.title = "webFX | " + obj.getAttribute('data-pageName');
+
+    if (obj.getAttribute("data-needsBlur") == "y"){
+        scBlur.classList.add('visible')
+    } else if (obj.getAttribute("data-needsBlur") == "n"){
+        scBlur.classList.remove('visible')
+    }
+
+    if (obj.classList.contains("dmG")){
+        darkSupport.style.backgroundColor = "var(--green)"
+    } else if (obj.classList.contains("dmY")){
+        darkSupport.style.backgroundColor = "var(--yellow)"
+    } else if (obj.classList.contains("dmR")){
+        darkSupport.style.backgroundColor = "var(--red)"
+    }
 }
+
+/*
 
 button1.onclick = function() {
     globalBtn(this);
@@ -58,8 +74,6 @@ button1.onclick = function() {
     mobileSupport.style.backgroundColor = "var(--green)";
     responsive.style.backgroundColor = "var(--green)";
     interactive.style.backgroundColor = "var(--red)";
-
-    scBlur.classList.remove('visible');
 }
 
 button2.onclick = function() {
@@ -69,8 +83,6 @@ button2.onclick = function() {
     mobileSupport.style.backgroundColor = "var(--yellow)";
     responsive.style.backgroundColor = "var(--yellow)";
     interactive.style.backgroundColor = "var(--green)";
-
-    scBlur.classList.remove('visible');
 }
 
 button3.onclick = function() {
@@ -80,21 +92,15 @@ button3.onclick = function() {
     mobileSupport.style.backgroundColor = "var(--yellow)";
     responsive.style.backgroundColor = "var(--red)";
     interactive.style.backgroundColor = "var(--yellow)";
-
-    scBlur.classList.remove('visible');
 }
 
 button4.onclick = function() {
     globalBtn(this);
 
-    document.body.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--my4');
-
     darkSupport.style.backgroundColor = "var(--green)";
     mobileSupport.style.backgroundColor = "var(--yellow)";
     responsive.style.backgroundColor = "var(--red)";
     interactive.style.backgroundColor = "var(--green)";
-
-    scBlur.classList.remove('visible');
 }
 
 button5.onclick = function() {
@@ -104,8 +110,6 @@ button5.onclick = function() {
     mobileSupport.style.backgroundColor = "var(--green)";
     responsive.style.backgroundColor = "var(--red)";
     interactive.style.backgroundColor = "var(--green)";
-
-    scBlur.classList.remove('visible');
 }
 
 button6.onclick = function() {
@@ -115,8 +119,6 @@ button6.onclick = function() {
     mobileSupport.style.backgroundColor = "var(--green)";
     responsive.style.backgroundColor = "var(--green)";
     interactive.style.backgroundColor = "var(--red)";
-
-    scBlur.classList.remove('visible');
 }
 
 button7.onclick = function() {
@@ -126,8 +128,6 @@ button7.onclick = function() {
     mobileSupport.style.backgroundColor = "var(--green)";
     responsive.style.backgroundColor = "var(--green)";
     interactive.style.backgroundColor = "var(--red)";
-
-    scBlur.classList.remove('visible');
 }
 
 button8.onclick = function() {
@@ -137,8 +137,6 @@ button8.onclick = function() {
     mobileSupport.style.backgroundColor = "var(--green)";
     responsive.style.backgroundColor = "var(--green)";
     interactive.style.backgroundColor = "var(--green)";
-
-    scBlur.classList.remove('visible');
 }
 
 button9.onclick = function() {
@@ -148,8 +146,6 @@ button9.onclick = function() {
     mobileSupport.style.backgroundColor = "var(--yellow)";
     responsive.style.backgroundColor = "var(--red)";
     interactive.style.backgroundColor = "var(--green)";
-
-    scBlur.classList.remove('visible');
 }
 
 button10.onclick = function() {
@@ -159,8 +155,6 @@ button10.onclick = function() {
     mobileSupport.style.backgroundColor = "var(--yellow)";
     responsive.style.backgroundColor = "var(--red)";
     interactive.style.backgroundColor = "var(--green)";
-
-    scBlur.classList.add('visible');
 }
 
 button11.onclick = function() {
@@ -170,6 +164,6 @@ button11.onclick = function() {
     mobileSupport.style.backgroundColor = "var(--red)";
     responsive.style.backgroundColor = "var(--green)";
     interactive.style.backgroundColor = "var(--green)";
-
-    scBlur.classList.remove('visible');
 }
+
+*/

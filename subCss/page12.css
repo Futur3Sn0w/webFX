@@ -1,0 +1,33 @@
+.page12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    width: 150px;
+    height: 75px;
+
+    background-color: #cf4acf;
+    border-radius: 10px;
+    box-shadow: 0 7px 0 0 #8d328d;
+
+    transform: scale(2);
+
+    transition: box-shadow .1s, transform .1s;
+
+    font-family: var(--fontFace);
+    font-weight: 600;
+    color: white;
+
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:active{
+    box-shadow: 0 0 0 0 #8d328d;
+    transform: scale(2) translateY(7px);
+}
