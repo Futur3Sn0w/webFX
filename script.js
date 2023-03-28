@@ -50,17 +50,17 @@ function globalBtn(obj) {
 
     document.title = "webFX | " + obj.getAttribute('data-pageName');
 
-    if (obj.getAttribute("data-needsBlur") == "y"){
+    if (obj.getAttribute("data-needsBlur") == "y") {
         scBlur.classList.add('visible')
-    } else if (obj.getAttribute("data-needsBlur") == "n"){
+    } else if (obj.getAttribute("data-needsBlur") == "n") {
         scBlur.classList.remove('visible')
     }
 
-    if (obj.classList.contains("dmG")){
+    if (obj.classList.contains("dmG")) {
         darkSupport.style.backgroundColor = "var(--green)"
-    } else if (obj.classList.contains("dmY")){
+    } else if (obj.classList.contains("dmY")) {
         darkSupport.style.backgroundColor = "var(--yellow)"
-    } else if (obj.classList.contains("dmR")){
+    } else if (obj.classList.contains("dmR")) {
         darkSupport.style.backgroundColor = "var(--red)"
     }
 }
