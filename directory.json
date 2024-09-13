@@ -1,0 +1,184 @@
+[
+    {
+        "id": "pageBtn1",
+        "pageName": "No-morphism",
+        "entrypoint": "page1",
+        "needsBlur": false,
+        "iconClass": "fas fa-box",
+        "iconBackgroundColor": "#d2bedb",
+        "specs": {
+            "darkMode": "green",
+            "mobileSupport": "green",
+            "responsive": "green",
+            "interactive": "red"
+        }
+    },
+    {
+        "id": "pageBtn2",
+        "pageName": "Fluent Reveal",
+        "entrypoint": "page2",
+        "needsBlur": false,
+        "iconClass": "fas fa-grip-horizontal",
+        "iconBackgroundColor": "#b6d8ee",
+        "specs": {
+            "darkMode": "red",
+            "mobileSupport": "yellow",
+            "responsive": "yellow",
+            "interactive": "green"
+        }
+    },
+    {
+        "id": "pageBtn3",
+        "pageName": "CSS banner",
+        "entrypoint": "page3",
+        "needsBlur": false,
+        "iconClass": "fas fa-bookmark",
+        "iconBackgroundColor": "#f3b5b0",
+        "specs": {
+            "darkMode": "green",
+            "mobileSupport": "green",
+            "responsive": "green",
+            "interactive": "red"
+        }
+    },
+    {
+        "id": "pageBtn4",
+        "pageName": "tvOS shine",
+        "entrypoint": "page4",
+        "needsBlur": true,
+        "iconClass": "fas fa-lightbulb",
+        "iconBackgroundColor": "#fadfac",
+        "specs": {
+            "darkMode": "green",
+            "mobileSupport": "green",
+            "responsive": "green",
+            "interactive": "red"
+        }
+    },
+    {
+        "id": "pageBtn5",
+        "pageName": "Apple Music",
+        "entrypoint": "page5",
+        "needsBlur": false,
+        "iconClass": "fas fa-music",
+        "iconBackgroundColor": "#fec6b8",
+        "specs": {
+            "darkMode": "green",
+            "mobileSupport": "green",
+            "responsive": "green",
+            "interactive": "red"
+        }
+    },
+    {
+        "id": "pageBtn6",
+        "pageName": "Boot Screen",
+        "entrypoint": "page6",
+        "needsBlur": false,
+        "iconClass": "fab fa-google",
+        "iconBackgroundColor": "#b3cdc3",
+        "specs": {
+            "darkMode": "green",
+            "mobileSupport": "green",
+            "responsive": "green",
+            "interactive": "red"
+        }
+    },
+    {
+        "id": "pageBtn7",
+        "pageName": "Material You",
+        "entrypoint": "page7",
+        "needsBlur": false,
+        "iconClass": "fab fa-android",
+        "iconBackgroundColor": "#e8f79f",
+        "specs": {
+            "darkMode": "green",
+            "mobileSupport": "green",
+            "responsive": "green",
+            "interactive": "red"
+        }
+    },
+    {
+        "id": "pageBtn8",
+        "pageName": "Play on Logos",
+        "entrypoint": "page8",
+        "needsBlur": true,
+        "iconClass": "fas fa-play",
+        "iconBackgroundColor": "#fadfac",
+        "specs": {
+            "darkMode": "green",
+            "mobileSupport": "green",
+            "responsive": "green",
+            "interactive": "red"
+        }
+    },
+    {
+        "id": "pageBtn9",
+        "pageName": "BlurFX",
+        "entrypoint": "page9",
+        "needsBlur": false,
+        "iconClass": "fas fa-brush",
+        "iconBackgroundColor": "#f3b5b0",
+        "specs": {
+            "darkMode": "green",
+            "mobileSupport": "green",
+            "responsive": "green",
+            "interactive": "red"
+        }
+    },
+    {
+        "id": "pageBtn10",
+        "pageName": "TeleText",
+        "entrypoint": "page10",
+        "needsBlur": true,
+        "iconClass": "fas fa-mouse",
+        "iconBackgroundColor": "#b3cdc3",
+        "specs": {
+            "darkMode": "green",
+            "mobileSupport": "green",
+            "responsive": "green",
+            "interactive": "red"
+        }
+    },
+    {
+        "id": "pageBtn11",
+        "pageName": "In&Out",
+        "entrypoint": "page11",
+        "needsBlur": false,
+        "iconClass": "fas fa-pallet",
+        "iconBackgroundColor": "#fec6b8",
+        "specs": {
+            "darkMode": "green",
+            "mobileSupport": "green",
+            "responsive": "green",
+            "interactive": "red"
+        }
+    },
+    {
+        "id": "pageBtn12",
+        "pageName": "Pseudo3D",
+        "entrypoint": "page12",
+        "needsBlur": true,
+        "iconClass": "fas fa-box",
+        "iconBackgroundColor": "#e8f79f",
+        "specs": {
+            "darkMode": "green",
+            "mobileSupport": "green",
+            "responsive": "green",
+            "interactive": "red"
+        }
+    },
+    {
+        "id": "pageBtn13",
+        "pageName": "Video Player",
+        "entrypoint": "page13",
+        "needsBlur": true,
+        "iconClass": "fas fa-play",
+        "iconBackgroundColor": "#d89ff7",
+        "specs": {
+            "darkMode": "red",
+            "mobileSupport": "red",
+            "responsive": "red",
+            "interactive": "red"
+        }
+    }
+]

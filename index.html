@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webFX | No-morphism</title>
-    <link rel="stylesheet" href="body.css">
+    <title>WebFX</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="globals.css">
     <script src="https://kit.fontawesome.com/a1fc6f0f3a.js" crossorigin="anonymous"></script>
 
@@ -24,133 +26,31 @@
 </head>
 
 <body>
-
-    <style>
-        body::after {
-            content: "";
-            width: 100vw;
-            height: 100vh;
-
-            position: absolute;
-
-            background-color: rgba(0, 0, 0, 0.45);
-        }
-    </style>
+    <div class="notesBox">
+        <ul class="notes">
+            <li>minimize is currently nonfunctional</li>
+            <li>close sometimes fails to remove focus when the window closes</li>
+            <li>clicking navdial buttons causes focus to flicker</li>
+            <li>more?</li>
+        </ul>
+    </div>
 
     <div class="navDial" id="navDial">
-        <div class="buttonGroup">
-            <div class="pnBtn pnbtn1 dmG msG reG inR" id="pageBtn1" onClick="globalBtn(this)"
-                style="background-color: #d2bedb;" data-pageSrcName="page1" data-pageName="No-morphism"
-                data-needsBlur="n">
-
-                <i class="fas fa-box"></i>
-                <div class="pnIndic" id="pni1"></div>
-
-            </div>
-
-            <div class="pnBtn pnbtn2 dmR msY reY inG" id="pageBtn2" onClick="globalBtn(this)"
-                style="background-color: #b6d8ee;" data-pageSrcName="page2" data-pageName="Fluent Design: 'Hover Focus'"
-                data-needsBlur="n">
-
-                <i class="fas fa-grip-horizontal"></i>
-
-            </div>
-
-            <div class="pnBtn pnbtn3 dmG msG reG inR" id="pageBtn3" onClick="globalBtn(this)"
-                style="background-color: #f3b5b0;" data-pageSrcName="page3" data-pageName="Lightbox w/ banner"
-                data-needsBlur="n">
-
-                <i class="fas fa-bookmark"></i>
-
-            </div>
-
-            <div class="pnBtn pnbtn4 dmG msG reG inR" id="pageBtn4" onClick="globalBtn(this)"
-                style="background-color: #fadfac; display: none;" data-pageSrcName="page4"
-                data-pageName="tvOS hover light" data-needsBlur="n">
-
-                <i class="fas fa-lightbulb"></i>
-
-            </div>
-
-            <div class="pnBtn pnbtn5 dmG msG reG inR" id="pageBtn5" onClick="globalBtn(this)"
-                style="background-color: #fec6b8;" data-pageSrcName="page5" data-pageName="Apple Music window card"
-                data-needsBlur="n">
-
-                <i class="fas fa-music"></i>
-
-            </div>
-
-            <div class="pnBtn pnbtn6 dmG msG reG inR" id="pageBtn6" onClick="globalBtn(this)"
-                style="background-color: #b3cdc3;" data-pageSrcName="page6" data-pageName="Pixel Boot Screen (Emulated)"
-                data-needsBlur="n">
-
-                <i class="fab fa-google"></i>
-
-            </div>
-
-            <div class="pnBtn pnbtn7 dmG msG reG inR" id="pageBtn7" onClick="globalBtn(this)"
-                style="background-color: #e8f79f;" data-pageSrcName="page7" data-pageName="More Material You Things"
-                data-needsBlur="n">
-
-                <i class="fab fa-android"></i>
-
-            </div>
-
-            <div class="pnBtn pnbtn8 dmG msG reG inR" id="pageBtn8" onClick="globalBtn(this)"
-                style="background-color: #fadfac; display: none;" data-pageSrcName="page8"
-                data-pageName="Play on Logos (Disabled)" data-needsBlur="n">
-
-                <i class="fas fa-play"></i>
-
-            </div>
-
-            <div class="pnBtn pnbtn9 dmG msG reG inR" id="pageBtn9" onClick="globalBtn(this)"
-                style="background-color: #f3b5b0;" data-pageSrcName="page9" data-pageName="BlurFX" data-needsBlur="n">
-
-                <i class="fas fa-brush"></i>
-
-            </div>
-
-            <div class="pnBtn pnbtn10 dmG msG reG inR" id="pageBtn10" onClick="globalBtn(this)"
-                style="background-color: #b3cdc3;" data-pageSrcName="page10" data-pageName="TeleText"
-                data-needsBlur="y">
-
-                <i class="fas fa-mouse"></i>
-
-            </div>
-
-            <div class="pnBtn pnbtn11 dmG msG reG inR" id="pageBtn11" onClick="globalBtn(this)"
-                style="background-color: #fec6b8;" data-pageSrcName="page11" data-pageName="In&Out" data-needsBlur="n">
-
-                <i class="fas fa-pallet"></i>
-
-            </div>
-
-            <div class="pnBtn pnbtn12 dmG msG reG inR" id="pageBtn12" onClick="globalBtn(this)"
-                style="background-color: #e8f79f;" data-pageSrcName="page12" data-pageName="Pseudo3D"
-                data-needsBlur="y">
-
-                <i class="fas fa-box"></i>
-
-            </div>
-
-            <div class="pnBtn pnbtn13 dmR msR reR inR" id="pageBtn13" onClick="globalBtn(this)"
-                style="background-color: #d89ff7;" data-pageSrcName="page13" data-pageName="Concept Video Player UI"
-                data-needsBlur="y">
-
-                <i class="fas fa-play"></i>
-
-            </div>
+        <div class="showApps"></div>
+        <div class="buttonGroup"></div>
+        <div class="tray">
+            <div class="notesBtn"><i class="fa-regular fa-note-sticky"></i></div>
+            <div class="statusCenterBtn scBtn" id="scBtn">WebFX</div>
         </div>
-        <div class="statusCenterBtn" id="scBtn">No-morphism</div>
+    </div>
+
+    <div class="launcher">
+        <div class="buttonGroup"></div>
     </div>
 
     <div class="statusCenter" id="statusCenter">
         <div class="scTop">
-            <div class="sctTitle" id="sctTitle">No-morphism</div>
-            <div class="sctInfoBtn">
-                <i class="fas fa-info-circle"></i>
-            </div>
+            <div class="sctTitle" id="sctTitle">WebFX</div>
         </div>
         <div class="scBlurberry" id="scBlurberry">This page has not yet been finalized, and therefore does not have a
             rating.</div>
@@ -168,36 +68,10 @@
         </div>
     </div>
 
-    <div class="mpiPopup"></div>
-
-    <div class="scBackplane" id="scBackplane"></div>
-
-    <embed class="page1i" src="subpages/page1.html" frameborder="0" id="iViewport"></embed>
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 
     <script src="script.js"></script>
-
-    <script>
-        var statCenter = document.getElementById('statusCenter');
-        var statHider = document.getElementById('scBackplane');
-
-        scBtn.onclick = function () {
-            statCenter.style.right = "5px";
-            statCenter.style.opacity = "1";
-            statHider.style.display = "block";
-
-            scBtn.style.backgroundColor = "rgba(255, 255, 255, .2)"
-        }
-
-        statHider.onclick = function () {
-            statCenter.style.right = "-295px";
-            statCenter.style.opacity = "0";
-            statHider.style.display = "none";
-
-            scBtn.style.backgroundColor = "rgba(255, 255, 255, .1)"
-        }
-    </script>
 </body>
 
 </html>
